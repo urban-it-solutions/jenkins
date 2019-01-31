@@ -91,6 +91,6 @@ RUN /usr/local/bin/install-plugins.sh /opt/openshift/base-plugins.txt && \
 
 VOLUME ["/var/lib/jenkins"]
 
-USER 1001
+USER 0
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
 CMD ["/usr/libexec/s2i/run"]
